@@ -53,11 +53,13 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('view', path.join(_dirname, 'views'));
+// app.set('view', path.join(_dirname, 'views'));
+app.use('/view', express.static("views"));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-// app.use(favicon(path.join(_dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(_dirname, 'public', 'favicon.ico')));
+// app.use(express.static("public" ))
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
