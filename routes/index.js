@@ -7,4 +7,15 @@ router.get('/', function(req, res, next) {
 	res.render('index');
 });
 
+router.get('/hello', function(req, res, next) {
+	res.send('hello');
+	// console.log("inside route");
+	// res.render('index');
+});
+
+router.post('/map', function(req, res, next) {
+	console.log("inside route");
+	res.render('map');
+});
+
 module.exports = router;
