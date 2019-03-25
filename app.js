@@ -1,43 +1,43 @@
-var url = require('url');
-var fs = require('fs');
+// var url = require('url');
+// var fs = require('fs');
 
-function renderHTML (path, response) {
+// function renderHTML (path, response) {
 	
-	fs.readFile(path, null, function(error, data) {
-		if(error) {
-			response.writeHead(404);
-		}
+// 	fs.readFile(path, null, function(error, data) {
+// 		if(error) {
+// 			response.writeHead(404);
+// 		}
 
-		else {
-			response.write(data);
-		}
+// 		else {
+// 			response.write(data);
+// 		}
 
-		response.end();
-	});
-}
+// 		response.end();
+// 	});
+// }
 
 
-module.exports = {
+// module.exports = {
 	
-	handleRequest: function (request, response) {
-		response.writeHead(200, {'Content-Type': 'text/html'});
+// 	handleRequest: function (request, response) {
+// 		response.writeHead(200, {'Content-Type': 'text/html'});
 
-		var path = url.parse(request.url).pathname;
+// 		var path = url.parse(request.url).pathname;
 
-		switch (path) {
-			case '/': 
-				renderHTML('./public/index.html', response);
-				break;
-			case '/login':
-				renderHTML('./login.html', response);
-				break;
-			default:
-				response.writeHead(404);
-				response.write('Route not defined');
-				response.end();
-		}
-	}
-};
+// 		switch (path) {
+// 			case '/': 
+// 				renderHTML('./public/index.html', response);
+// 				break;
+// 			case '/login':
+// 				renderHTML('./login.html', response);
+// 				break;
+// 			default:
+// 				response.writeHead(404);
+// 				response.write('Route not defined');
+// 				response.end();
+// 		}
+// 	}
+// };
 
 
 var express = require('express');
@@ -68,10 +68,16 @@ app.use('/', routes);
 app.use('/users', users);
 
 // catch 404 and forward to event handler
-app.use(function (req, res, next) {
-	console.log("here");
-	var err = new Error ('Not Found');
-	err.status = 404;
-	next(err);
+// app.use(function (req, res, next) {
+// 	console.log("here");
+// 	var err = new Error ('Not Found');
+// 	err.status = 404;
+// 	next(err);
 
+// });
+
+app.get('/', function (req, res) {
+	res.send('Hello World');
 });
+
+app.listen(8000);
