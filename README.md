@@ -5,7 +5,6 @@ This app is designed to build out schedules based on placement scores.
 Node.js
 Express
 
-
 #Theme Origins
 Theme Name: Bocor
 Theme URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
