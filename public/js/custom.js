@@ -37,7 +37,7 @@
 			event.preventDefault();
 			}
 		});
-		$('a.totop,a#btn-scroll,a.btn-scroll,.carousel-inner .item a.btn').bind('click', function(event) {
+		$('a.totop,a#btn-scroll,a.btn-scroll,.carousel-inner .item a.btn ').bind('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
