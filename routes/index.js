@@ -7,6 +7,13 @@ router.get('/', function(req, res, next) {
 	res.render('index');
 });
 
+router.post('/index', function(req, res, next) {
+	
+	res.send(res.data);
+});
+
+
+
 router.get('/hello', function(req, res, next) {
 	res.send('hello');
 	// console.log("inside route");

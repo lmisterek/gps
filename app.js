@@ -20,4 +20,7 @@ app.use(express.static("public/favicon.ico"));
 app.use('/', routes);
 // app.use('/users', users);
 
-app.listen(8000);
+
+app.listen(8000, function () {
+  console.log('Example app listening on port 8000!')
+})
