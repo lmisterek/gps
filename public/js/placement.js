@@ -80,3 +80,5 @@ function Reading (score) {
     return "CRE101";
 }
 
+module.exports = getScores;
+

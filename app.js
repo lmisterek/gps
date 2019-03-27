@@ -22,5 +22,5 @@ app.use('/', routes);
 
 
 app.listen(8000, function () {
-  console.log('Example app listening on port 8000!')
+  console.log('App is listening on port 8000!')
 })

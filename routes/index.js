@@ -1,15 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+// Get the scores from the form
+var getScores = require("../js/placement.js");
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	console.log("inside route");
 	res.render('index');
 });
 
-router.post('/index', function(req, res, next) {
+router.post('/placement', function(req, res, next) {
 	
-	res.send(res.data);
+	console.log(scores);
 });
 
 
