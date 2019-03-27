@@ -26,7 +26,7 @@
 	
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
-		$('.navbar-nav li a').bind('click', function(event) {
+		$('.navbar-nav li a, .footer-menu li a').bind('click', function(event) {
 			var $anchor = $(this);
 			var nav = $($anchor.attr('href'));
 			if (nav.length) {
@@ -37,13 +37,13 @@
 			event.preventDefault();
 			}
 		});
-		$('a.totop,a#btn-scroll,a.btn-scroll,.carousel-inner .item a.btn ').bind('click', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			event.preventDefault();
-		});
+		// $('a.totop,a#btn-scroll,a.btn-scroll,.carousel-inner .item a.btn ').bind('click', function(event) {
+		// 	var $anchor = $(this);
+		// 	$('html, body').stop().animate({
+		// 		scrollTop: $($anchor.attr('href')).offset().top
+		// 	}, 1500, 'easeInOutExpo');
+		// 	event.preventDefault();
+		// });
 	});
 
 	//nivo lightbox
