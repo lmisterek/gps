@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Get the scores from the form
-var getScores = require("../js/placement.js");
+//var getScores = require("../public/js/placement");
 
 
 /* GET home page. */
@@ -11,8 +11,8 @@ router.get('/', function(req, res, next) {
 	res.render('index');
 });
 
-router.post('/placement', function(req, res, next) {
-	
+router.post('/', function(req, res, next) {
+	res.render("working");
 	console.log(scores);
 });
 
@@ -25,8 +25,9 @@ router.get('/hello', function(req, res, next) {
 });
 
 router.post('/map', function(req, res, next) {
-	console.log("inside route");
-	res.render('map');
+	res.render("working");
+	//console.log("inside route");
+	//res.render('map');
 });
 
 module.exports = router;
