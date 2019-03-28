@@ -1,0 +1,203 @@
+	<!-- Section: placement -->
+    <section id="placement" class="home-section nopadd-bot color-dark bg-gray text-center">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">Placement Data</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="container">
+
+			<div class="row marginbot-80">
+				<div class="col-md-8 col-md-offset-2">
+				    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage">There was an error in sending your meesage.</div>
+                    <form id="placement" action="/data" method="post" role="form" class="placementData">
+    						<div class="row marginbot-20">
+    							<div class="col-md-6 xs-marginbot-20">
+    							    <div class="form-group">
+        								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+    							</div>
+    							<div class="col-md-6">
+    							    <div class="form-group">
+        								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+    							    </div>
+    							</div>
+    						</div>
+							
+							<!-- Table Containing Placement Tests and Scores -->
+							<div class="table-responsive">          
+  								<table class="table">
+									<thead>
+										<tr>
+											<th>Exam</th>
+											<th>Scores</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Write Placer</td>
+											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="readingComp">
+										    <option selected>Choose...</option>
+										    <option value="36">20 - 22</option>
+										    <option value="36">23 - 36</option>
+										    <option value="37">37 - 55</option>
+										    <option value="56">56 - 73</option>
+										    <option value="74">74 - 91</option>
+										    <option value="92">92 - 120</option>
+										    <option value="36">I have not taken this test.</option>
+									  		</select>
+											</td>
+										</tr>
+										<tr>
+											<td>Reading Comprehension</td>
+											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="readingComp">
+										    <option selected>Choose...</option>
+										    <option value="36">20 - 22</option>
+										    <option value="36">23 - 36</option>
+										    <option value="37">37 - 55</option>
+										    <option value="56">56 - 73</option>
+										    <option value="74">74 - 91</option>
+										    <option value="92">92 - 120</option>
+										    <option value="36">I have not taken this test.</option>
+									  		</select>
+									  		</td>
+										</tr>
+										<tr>
+											<td>Arithmetic</td>
+											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="arith">
+										    <option selected>Choose...</option>
+										    <option value="20">20 - 74</option>
+										    <option value="75">75 - 120</option>
+										    <option value="20">I have not taken this test.</option>
+									  		</select>
+											</td>
+										</tr>
+										<tr>
+											<td>Elementary Algebra</td>
+											<td>
+											<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="elemAlg">
+										    <option selected>Choose...</option>
+										    <option value="20">20 - 49</option>
+										    <option value="50">50 - 69</option>
+										    <option value="70">70 - 120</option>
+										    <option value="20">I have not taken this test.</option>
+									  		</select>
+									  		</td>
+										</tr>
+										<tr>
+											<td>College Level Math</td>
+											<td>
+												<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="colMath">
+											    <option selected>Choose...</option>
+											    <option value="20">20 - 31</option>
+											    <option value="32">32 - 53</option>
+											    <option value="54">54 - 59</option>
+											    <option value="60">60 - 120</option>
+											    <option value="20">I have not taken this test.</option>
+									  			</select>
+											</td>
+										</tr>
+										<tr>
+											<td>Maximum Number of Credits Per Semester</td>
+											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="numCredits">
+											    <option selected>Choose...</option>
+											    <option value="8">16</option>
+									  			</select>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+			
+
+
+    						<div class="row">
+    							<div class="col-md-12">
+    										
+    								<button type="submit" class="btn btn-skin btn-lg btn-block" id="testScores">
+    									Generate Schedule</button>
+    							</div>
+    						</div>
+						</form>
+	
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+	<!-- /Section: placement -->
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">Contact an Advisor</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="container">
+
+			<div class="row marginbot-80">
+				<div class="col-md-8 col-md-offset-2">
+				    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+						<form id="contact-form" action="" method="post" role="form" class="contactForm">
+    						<div class="row marginbot-20">
+    							<div class="col-md-6 xs-marginbot-20">
+    							    <div class="form-group">
+        								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+    							</div>
+    							<div class="col-md-6">
+    							    <div class="form-group">
+        								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+    							    </div>
+    							</div>
+    						</div>
+    						<div class="row">
+    							<div class="col-md-12">
+    								<div class="form-group">
+    									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validation"></div>
+    								</div>
+    								<div class="form-group">
+    									<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                        <div class="validation"></div>
+    								</div>						
+    								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+    									Send Message</button>
+    							</div>
+    						</div>
+						</form>
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
