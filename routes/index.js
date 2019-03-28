@@ -18,6 +18,12 @@ router.get('/', function(req, res, next) {
 	// console.log(scores);
 });
 
+router.get('/map', function(req, res, next) {
+	console.log("Make the map!");
+	res.render('map');
+	// console.log(scores);
+});
+
 router.get('/data', function(req, res, next) {
 	res.render("data posted");
 });
