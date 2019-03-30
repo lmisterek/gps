@@ -504,10 +504,10 @@ function DisplayCredits(studentMap) {
 		semNum++;
 	}
 
-	var totalHtml = $("<div>");
-	totalHtml.attr("id", "totalCredits");
-	$(totalHtml).html("Total Credit Hours: " + totalCredits);
-	$("#semesters").append(totalHtml);
+	// var totalHtml = $("<div>");
+	// totalHtml.attr("id", "totalCredits");
+	// $(totalHtml).html("Total Credit Hours: " + totalCredits);
+	// $("#semesters").append(totalHtml);
 
 }
 
