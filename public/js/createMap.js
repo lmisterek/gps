@@ -164,7 +164,6 @@ window.onload = function() {
 
 	// Place middle ordered Courses
 		// Check pre-reqs.
-		console.log
 		//lastCourses = arrayIntoObject(map.orderedCourses.middle, lastCourses);
 		// Place middle dropdowns 
 
