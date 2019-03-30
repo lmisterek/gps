@@ -80,13 +80,13 @@
     						<div class="row marginbot-20">
     							<div class="col-md-6 xs-marginbot-20">
     							    <div class="form-group">
-        								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+        								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                                         <div class="validation"></div>
                                     </div>
     							</div>
     							<div class="col-md-6">
     							    <div class="form-group">
-        								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+        								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
                                         <div class="validation"></div>
     							    </div>
     							</div>
@@ -104,8 +104,7 @@
 									<tbody>
 										<tr>
 											<td>Write Placer</td>
-											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="readingComp">
-										    <option selected>Choose...</option>
+											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="readingComp" required>
 										    <option value="36">20 - 22</option>
 										    <option value="36">23 - 36</option>
 										    <option value="37">37 - 55</option>
@@ -119,7 +118,6 @@
 										<tr>
 											<td>Reading Comprehension</td>
 											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="readingComp">
-										    <option selected>Choose...</option>
 										    <option value="36">20 - 22</option>
 										    <option value="36">23 - 36</option>
 										    <option value="37">37 - 55</option>
@@ -133,7 +131,7 @@
 										<tr>
 											<td>Arithmetic</td>
 											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="arith">
-										    <option selected>Choose...</option>
+										    <option selected value= "0">Choose...</option>
 										    <option value="20">20 - 74</option>
 										    <option value="75">75 - 120</option>
 										    <option value="20">I have not taken this test.</option>
@@ -144,7 +142,7 @@
 											<td>Elementary Algebra</td>
 											<td>
 											<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="elemAlg">
-										    <option selected>Choose...</option>
+										    <option selected value= "0">Choose...</option>
 										    <option value="20">20 - 49</option>
 										    <option value="50">50 - 69</option>
 										    <option value="70">70 - 120</option>
@@ -156,7 +154,7 @@
 											<td>College Level Math</td>
 											<td>
 												<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="colMath">
-											    <option selected>Choose...</option>
+											    <option selected value= "0">Choose...</option>
 											    <option value="20">20 - 31</option>
 											    <option value="32">32 - 53</option>
 											    <option value="54">54 - 59</option>
@@ -168,7 +166,7 @@
 										<tr>
 											<td>Maximum Number of Credits Per Semester</td>
 											<td><select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="numCredits">
-											    <option selected>Choose...</option>
+											    <option selected value= "0">Choose...</option>
 											    <option value="8">16</option>
 									  			</select>
 											</td>

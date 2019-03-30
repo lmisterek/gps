@@ -12,7 +12,6 @@ $("#testScores").click(function(e) {
   	elemAlg: $("#elemAlg").val(),
   	colMath: $("#colMath").val(),
   	numCredits: $("#numCredits").val()
-
   }
 
   //  Determine the english course
@@ -80,5 +79,5 @@ function Reading (score) {
     return "CRE101";
 }
 
-module.exports = placement;
+
 
