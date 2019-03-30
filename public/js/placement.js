@@ -14,7 +14,7 @@ $("#testScores").click(function(e) {
   	numCredits: $("#numCredits").val()
   }
 
-  //  Determine the english course
+  //  Determine the english course 
   var english = English(scores.writePlacer);
   var mathArray = MathArray(scores.colMath, scores.elemAlg, scores.arith);
   var reading = Reading(scores.readingComp);
